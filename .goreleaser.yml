@@ -26,7 +26,7 @@ sign:
   artifacts: checksum
 
 dockers:
-  - image: fabiolb/fabio
+  - image: denisvl/fabio
     latest: true
     tag_template: '{{ .Version }}-{{ .Env.GOVERSION }}'
     extra_files:

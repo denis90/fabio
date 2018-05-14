@@ -110,10 +110,10 @@ homebrew:
 # docker-aliases creates aliases for the docker containers
 # since goreleaser doesn't handle that properly yet
 docker-aliases:
-	docker tag fabiolb/fabio:$(VERSION)-$(GOVERSION) magiconair/fabio:$(VERSION)-$(GOVERSION)
-	docker tag fabiolb/fabio:$(VERSION)-$(GOVERSION) magiconair/fabio:latest
-	docker push magiconair/fabio:$(VERSION)-$(GOVERSION)
-	docker push magiconair/fabio:latest
+	docker tag denisvl/fabio:$(VERSION)-$(GOVERSION) denisvl/fabio:$(VERSION)-$(GOVERSION)
+	docker tag denisvl/fabio:$(VERSION)-$(GOVERSION) denisvl/fabio:latest
+	docker push denisvl/fabio:$(VERSION)-$(GOVERSION)
+	docker push denisvl/fabio:latest
 
 # codeship runs the CI on codeship
 codeship:
